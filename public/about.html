@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Smart Discount Calculator</title>
+  <meta name="description" content="Learn about Smart Discount Calculator - the most comprehensive online tool for calculating discounts, savings, and final prices for smart shoppers.">
+  <link rel="icon" type="image/svg+xml" href="/calculator-icon.svg">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f9fafb; line-height: 1.6; color: #374151; }
+    .container { max-width: 64rem; margin: 0 auto; padding: 2rem 1rem; }
+    .back-btn { display: inline-flex; align-items: center; color: #f97316; text-decoration: none; margin-bottom: 1.5rem; }
+    .back-btn:hover { color: #ea580c; }
+    .card { background: white; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid #e5e7eb; padding: 2rem; }
+    h1 { font-size: 2rem; font-weight: bold; color: #111827; margin-bottom: 1.5rem; }
+    h2 { font-size: 1.25rem; font-weight: 600; color: #111827; margin: 2rem 0 1rem; }
+    h3 { font-weight: 600; color: #111827; margin-bottom: 0.5rem; }
+    p { margin-bottom: 1rem; }
+    ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.5rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+    .feature-item { display: flex; align-items-start; gap: 0.75rem; }
+    .feature-icon { width: 1.5rem; height: 1.5rem; color: #f97316; margin-top: 0.25rem; flex-shrink: 0; }
+    .highlight-box { background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; margin: 1rem 0; }
+    .steps { margin: 1rem 0; }
+    .step { display: flex; align-items-start; gap: 1rem; margin-bottom: 1rem; }
+    .step-number { width: 2rem; height: 2rem; background: #f97316; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.875rem; flex-shrink: 0; }
+    .use-cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .use-case { padding: 1rem; border-radius: 0.5rem; }
+    .use-case-1 { background: #eff6ff; color: #1e3a8a; }
+    .use-case-2 { background: #f0fdf4; color: #14532d; }
+    .use-case-3 { background: #faf5ff; color: #581c87; }
+    .contact-box { background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; margin-top: 1rem; }
+    .contact-box p { margin-bottom: 0.5rem; }
+    .orange-dot { width: 0.5rem; height: 0.5rem; background: #f97316; border-radius: 50%; margin-right: 0.75rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back-btn">
+      ← Back to Calculator
+    </a>
+
+    <div class="card">
+      <h1>About Smart Discount Calculator</h1>
+      
+      <h2>What We Do</h2>
+      <p>Smart Discount Calculator is a comprehensive online tool designed to help shoppers make informed purchasing decisions by calculating exact savings, discounts, and final prices. Whether you're shopping for a single item or managing a full shopping cart, our calculator provides accurate, real-time calculations.</p>
+
+      <h2>Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+          </svg>
+          <div>
+            <h3>Single Item Calculator</h3>
+            <p style="font-size: 0.875rem;">Calculate discounts, apply coupons, add taxes and shipping for individual items.</p>
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v4a2 2 0 01-2 2H9a2 2 0 01-2-2v-4m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01"></path>
+          </svg>
+          <div>
+            <h3>Shopping Cart Mode</h3>
+            <p style="font-size: 0.875rem;">Manage multiple items, quantities, and calculate total savings across your entire cart.</p>
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z"></path>
+          </svg>
+          <div>
+            <h3>Advanced Discount Rules</h3>
+            <p style="font-size: 0.875rem;">Apply complex discount rules like "Spend $X, Save $Y" and quantity-based discounts.</p>
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+          </svg>
+          <div>
+            <h3>Multiple Discount Types</h3>
+            <p style="font-size: 0.875rem;">Combine percentage discounts, fixed amounts, coupon codes, and promotional offers.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Why Choose Us?</h2>
+      <div class="highlight-box">
+        <ul style="list-style: none;">
+          <li style="display: flex; align-items: center; margin-bottom: 0.75rem;">
+            <span class="orange-dot"></span>
+            <span><strong>100% Free:</strong> No registration, no hidden fees, no premium features to unlock</span>
+          </li>
+          <li style="display: flex; align-items: center; margin-bottom: 0.75rem;">
+            <span class="orange-dot"></span>
+            <span><strong>Privacy-Focused:</strong> All calculations happen in your browser - we don't store your data</span>
+          </li>
+          <li style="display: flex; align-items: center; margin-bottom: 0.75rem;">
+            <span class="orange-dot"></span>
+            <span><strong>Accurate Results:</strong> Precise calculations you can trust for your shopping decisions</span>
+          </li>
+          <li style="display: flex; align-items: center; margin-bottom: 0.75rem;">
+            <span class="orange-dot"></span>
+            <span><strong>Mobile-Friendly:</strong> Works perfectly on all devices - desktop, tablet, or mobile</span>
+          </li>
+          <li style="display: flex; align-items: center;">
+            <span class="orange-dot"></span>
+            <span><strong>Always Updated:</strong> We continuously improve features based on user feedback</span>
+          </li>
+        </ul>
+      </div>
+
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div>
+            <h3>Enter Your Item Details</h3>
+            <p>Add your item's original price, name, and quantity</p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">2</div>
+          <div>
+            <h3>Apply Discounts & Rules</h3>
+            <p>Set up percentage discounts, coupons, promotional codes, and advanced discount rules</p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">3</div>
+          <div>
+            <h3>Add Tax & Shipping</h3>
+            <p>Include sales tax and shipping costs for accurate final pricing</p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">4</div>
+          <div>
+            <h3>Get Instant Results</h3>
+            <p>See your total savings, discount breakdown, and final price instantly</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Perfect For</h2>
+      <div class="use-cases">
+        <div class="use-case use-case-1">
+          <h3>Online Shoppers</h3>
+          <p style="font-size: 0.875rem;">Compare deals, calculate final prices before checkout, and maximize your savings.</p>
+        </div>
+        
+        <div class="use-case use-case-2">
+          <h3>Budget Planners</h3>
+          <p style="font-size: 0.875rem;">Plan your shopping budget accurately with precise cost calculations.</p>
+        </div>
+        
+        <div class="use-case use-case-3">
+          <h3>Deal Hunters</h3>
+          <p style="font-size: 0.875rem;">Quickly evaluate complex promotional offers and find the best deals.</p>
+        </div>
+      </div>
+
+      <h2>Contact & Support</h2>
+      <div class="contact-box">
+        <p style="margin-bottom: 1rem;">Have questions, suggestions, or need help? We'd love to hear from you!</p>
+        <p><strong>Email:</strong>dreamcatcherluo@gmail.com</p>
+        <p style="font-size: 0.875rem; color: #6b7280; margin-top: 1rem;">
+          We typically respond within 24-48 hours during business days.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
