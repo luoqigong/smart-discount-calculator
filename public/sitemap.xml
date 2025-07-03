@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://smartdiscountcalculator.com/</loc>
+    <loc>https://disccalc.com/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,7 +10,7 @@
   
   <!-- About Page -->
   <url>
-    <loc>https://smartdiscountcalculator.com/about.html</loc>
+    <loc>https://disccalc.com/about.html</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -18,7 +18,7 @@
   
   <!-- Privacy Policy -->
   <url>
-    <loc>https://smartdiscountcalculator.com/privacy.html</loc>
+    <loc>https://disccalc.com/privacy.html</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -26,7 +26,7 @@
   
   <!-- Terms of Service -->
   <url>
-    <loc>https://smartdiscountcalculator.com/terms.html</loc>
+    <loc>https://disccalc.com/terms.html</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

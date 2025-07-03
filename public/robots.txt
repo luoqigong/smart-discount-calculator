@@ -7,7 +7,7 @@ Allow: /privacy.html
 Allow: /terms.html
 
 # Sitemap
-Sitemap: https://smartdiscountcalculator.com/sitemap.xml
+Sitemap: https://disccalc.com/sitemap.xml
 
 # Disallow specific file types that shouldn't be indexed
 Disallow: *.json
