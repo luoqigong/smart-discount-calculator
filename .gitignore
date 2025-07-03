@@ -26,7 +26,6 @@ setupTests.ts
 
 # Documentation files
 *.md
-!README.md
 
 # IDE/Editor files
 .vscode/
