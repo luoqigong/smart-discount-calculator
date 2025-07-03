@@ -1,19 +1,18 @@
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export const TermsOfService: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-6">
-          <Link 
-            to="/" 
+          <button 
+            onClick={() => window.history.back()}
             className="inline-flex items-center text-amazon-orange hover:text-orange-600 transition-colors"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Calculator
-          </Link>
+          </button>
         </div>
 
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
