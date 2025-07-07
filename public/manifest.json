@@ -4,7 +4,7 @@
   "description": "Calculate discounts, savings, and final prices for smart shopping decisions",
   "theme_color": "#f97316",
   "background_color": "#ffffff",
-  "display": "standalone",
+  "display": "browser",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
