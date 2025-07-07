@@ -168,40 +168,42 @@ export const InputForm: React.FC<InputFormProps> = ({
   };
 
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between mb-6">
+    <div className="space-y-4 sm:space-y-6">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4 sm:mb-6">
         <div className="flex items-center gap-2">
-          <Calculator className="w-6 h-6 text-amazon-orange" />
-          <h2 className="text-xl font-semibold text-gray-900">Discount Calculator</h2>
+          <Calculator className="w-5 h-5 sm:w-6 sm:h-6 text-amazon-orange" />
+          <h2 className="text-lg sm:text-xl font-semibold text-gray-900">Discount Calculator</h2>
         </div>
         
         {/* Mode Toggle Buttons */}
         <div className="flex items-center gap-2">
-          <div className="flex bg-gray-100 rounded-lg p-1">
+          <div className="flex bg-gray-100 rounded-lg p-1 w-full sm:w-auto">
             <button
               onClick={() => onSwitchMode('single')}
-              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
+              className={`flex-1 sm:flex-none px-2 sm:px-3 py-2 rounded-md text-xs sm:text-sm font-medium transition-colors whitespace-nowrap ${
                 calculatorMode === 'single'
                   ? 'bg-white text-gray-900 shadow-sm'
                   : 'text-gray-600 hover:text-gray-900'
               }`}
             >
-              <div className="flex items-center gap-2">
-                <Calculator className="w-4 h-4" />
-                Single Item
+              <div className="flex items-center justify-center gap-1 sm:gap-2">
+                <Calculator className="w-3 h-3 sm:w-4 sm:h-4" />
+                <span className="hidden xs:inline">Single Item</span>
+                <span className="xs:hidden">Single</span>
               </div>
             </button>
             <button
               onClick={() => onSwitchMode('cart')}
-              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
+              className={`flex-1 sm:flex-none px-2 sm:px-3 py-2 rounded-md text-xs sm:text-sm font-medium transition-colors whitespace-nowrap ${
                 calculatorMode === 'cart'
                   ? 'bg-white text-gray-900 shadow-sm'
                   : 'text-gray-600 hover:text-gray-900'
               }`}
             >
-              <div className="flex items-center gap-2">
-                <CartIcon className="w-4 h-4" />
-                Shopping Cart
+              <div className="flex items-center justify-center gap-1 sm:gap-2">
+                <CartIcon className="w-3 h-3 sm:w-4 sm:h-4" />
+                <span className="hidden xs:inline">Shopping Cart</span>
+                <span className="xs:hidden">Cart</span>
               </div>
             </button>
           </div>
@@ -250,14 +252,14 @@ export const InputForm: React.FC<InputFormProps> = ({
       )}
 
       {/* Common Settings Section */}
-      <div className="border-t pt-6 space-y-6">
-        <h3 className="text-lg font-medium text-gray-900">General Settings</h3>
+      <div className="border-t pt-4 sm:pt-6 space-y-4 sm:space-y-6">
+        <h3 className="text-base sm:text-lg font-medium text-gray-900">General Settings</h3>
         
         {/* Coupon */}
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
             <span className="flex items-center gap-2">
-              <Receipt className="w-4 h-4" />
+              <Receipt className="w-3 h-3 sm:w-4 sm:h-4" />
               Coupon (Optional)
             </span>
           </label>
@@ -269,7 +271,7 @@ export const InputForm: React.FC<InputFormProps> = ({
               ]}
               value={couponType}
               onChange={(e) => setCouponType(e.target.value as any)}
-              className="w-20"
+              className="w-16 sm:w-20"
             />
             <Input
               type="text"
@@ -285,7 +287,7 @@ export const InputForm: React.FC<InputFormProps> = ({
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
             <span className="flex items-center gap-2">
-              <Percent className="w-4 h-4" />
+              <Percent className="w-3 h-3 sm:w-4 sm:h-4" />
               Promo Code (Optional)
             </span>
           </label>
@@ -297,7 +299,7 @@ export const InputForm: React.FC<InputFormProps> = ({
               ]}
               value={promoType}
               onChange={(e) => setPromoType(e.target.value as any)}
-              className="w-20"
+              className="w-16 sm:w-20"
             />
             <Input
               type="text"
@@ -313,7 +315,7 @@ export const InputForm: React.FC<InputFormProps> = ({
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
             <span className="flex items-center gap-2">
-              <DollarSign className="w-4 h-4" />
+              <DollarSign className="w-3 h-3 sm:w-4 sm:h-4" />
               Other Discounts (Optional)
             </span>
           </label>
@@ -336,7 +338,7 @@ export const InputForm: React.FC<InputFormProps> = ({
                 ]}
                 value={otherDiscountType}
                 onChange={(e) => setOtherDiscountType(e.target.value as any)}
-                className="w-20"
+                className="w-16 sm:w-20"
               />
               <Input
                 type="text"
@@ -366,16 +368,16 @@ export const InputForm: React.FC<InputFormProps> = ({
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
             <span className="flex items-center gap-2">
-              <Truck className="w-4 h-4" />
+              <Truck className="w-3 h-3 sm:w-4 sm:h-4" />
               Shipping Options
             </span>
           </label>
           <Select
             options={[
               { value: 'free', label: 'Free Shipping' },
-              { value: 'standard', label: 'Standard Shipping ($5.99)' },
-              { value: 'express', label: 'Express Shipping ($12.99)' },
-              { value: 'custom', label: 'Custom Shipping Cost' }
+              { value: 'standard', label: 'Standard ($5.99)' },
+              { value: 'express', label: 'Express ($12.99)' },
+              { value: 'custom', label: 'Custom Cost' }
             ]}
             value={params.shipping.type}
             onChange={(e) => handleShippingChange(e.target.value)}
@@ -392,7 +394,7 @@ export const InputForm: React.FC<InputFormProps> = ({
         </div>
 
         {/* Reset Button */}
-        <div className="pt-4">
+        <div className="pt-3 sm:pt-4">
           <Button
             variant="outline"
             onClick={onReset}

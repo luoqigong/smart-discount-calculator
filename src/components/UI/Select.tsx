@@ -23,15 +23,15 @@ export const Select: React.FC<SelectProps> = ({
   return (
     <div className="space-y-1">
       {label && (
-        <label className="block text-sm font-medium text-gray-700">
+        <label className="block text-xs sm:text-sm font-medium text-gray-700">
           {label}
         </label>
       )}
       <div className="relative">
         <select
           className={`
-            block w-full px-3 py-3 border border-gray-300 rounded-lg
-            text-sm bg-white
+            block w-full px-2 sm:px-3 py-3 border border-gray-300 rounded-lg
+            text-xs sm:text-sm bg-white
             focus:outline-none focus:ring-2 focus:ring-amazon-orange focus:border-amazon-orange
             disabled:bg-gray-50 disabled:text-gray-500
             ${error ? 'border-red-300 focus:ring-red-500 focus:border-red-500' : ''}
@@ -47,10 +47,10 @@ export const Select: React.FC<SelectProps> = ({
         </select>
       </div>
       {error && (
-        <p className="text-sm text-red-600">{error}</p>
+        <p className="text-xs sm:text-sm text-red-600">{error}</p>
       )}
       {helpText && !error && (
-        <p className="text-sm text-gray-500">{helpText}</p>
+        <p className="text-xs sm:text-sm text-gray-500">{helpText}</p>
       )}
     </div>
   );
